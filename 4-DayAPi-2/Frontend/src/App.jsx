@@ -14,7 +14,7 @@ const App = () => {
 
   useEffect(function(){
     async function fetchNotes(){
-      const response = await axios.get('http://localhost:3000/notes')
+      const response = await axios.get('https://three-day.onrender.com/notes')
       setNotes(response.data)
     }
     fetchNotes()
@@ -36,14 +36,14 @@ const App = () => {
     await addNote()
   }
   async function deleteNote(index){
-    let response = await axios.delete(`http://localhost:3000/notes/:${index}`)
+    let response = await axios.delete(`https://three-day.onrender.com/notes/:${index}`)
     setNotes(response.data.notes)
     console.log(index)
   }
 
   async function updateNote(index){
     let description = prompt("Enter new description")
-    let response = await axios.patch(`http://localhost:3000/notes/${index}`,{
+    let response = await axios.patch(`https://three-day.onrender.com/notes/${index}`,{
       description:description
     })
     setNotes(response.data.notes)
