@@ -51,7 +51,7 @@ const App = () => {
 
   async function addNote(){
     try {
-      const response = await axios.post('http://localhost:3000/notes', {
+      const response = await axios.post('https://three-day.onrender.com/notes', {
         title: newTitle,
         description: newDescription
       })
