@@ -3,6 +3,8 @@ const express = require('express')
 const app = express();
 const notesModel = require('./models/notes.model')
 app.use(express.json());
+const cors = require('cors')
+app.use(cors())
 
 
 app.post('/notes',async (req,res)=>{

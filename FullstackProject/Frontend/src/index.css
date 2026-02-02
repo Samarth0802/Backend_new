@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+html .completeForm,
+body .completeForm,
+#root .completeForm {
+  width: 100%;
+  height: 100%;
+}
+html .completeForm .submitPart,
+body .completeForm .submitPart,
+#root .completeForm .submitPart {
+  background-color: rgba(56, 55, 55, 0.301);
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+html .completeForm .submitPart form,
+body .completeForm .submitPart form,
+#root .completeForm .submitPart form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+html .completeForm .submitPart form input,
+body .completeForm .submitPart form input,
+#root .completeForm .submitPart form input {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.425);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+}
+html .completeForm .submitPart form input::-moz-placeholder, body .completeForm .submitPart form input::-moz-placeholder, #root .completeForm .submitPart form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+html .completeForm .submitPart form input::placeholder,
+body .completeForm .submitPart form input::placeholder,
+#root .completeForm .submitPart form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+html .completeForm .submitPart form input:focus,
+body .completeForm .submitPart form input:focus,
+#root .completeForm .submitPart form input:focus {
+  outline: none;
+  border: 1px solid rgba(76, 175, 80, 0.5);
+}
+html .completeForm .submitPart form button,
+body .completeForm .submitPart form button,
+#root .completeForm .submitPart form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+html .completeForm .submitPart form button:hover,
+body .completeForm .submitPart form button:hover,
+#root .completeForm .submitPart form button:hover {
+  background-color: #45a049;
+}
+html .completeForm .taskList,
+body .completeForm .taskList,
+#root .completeForm .taskList {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+html .completeForm .taskList .noTask,
+body .completeForm .taskList .noTask,
+#root .completeForm .taskList .noTask {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+html .completeForm .taskList .taskCard,
+body .completeForm .taskList .taskCard,
+#root .completeForm .taskList .taskCard {
+  background-color: rgba(56, 55, 55, 0.4);
+  border-radius: 8px;
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+html .completeForm .taskList .taskCard h3,
+body .completeForm .taskList .taskCard h3,
+#root .completeForm .taskList .taskCard h3 {
+  font-size: 18px;
+  color: #4caf50;
+  margin-bottom: 5px;
+}
+html .completeForm .taskList .taskCard p,
+body .completeForm .taskList .taskCard p,
+#root .completeForm .taskList .taskCard p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+html .completeForm .taskList .taskCard i,
+body .completeForm .taskList .taskCard i,
+#root .completeForm .taskList .taskCard i {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+html .completeForm .taskList .taskCard i:active,
+body .completeForm .taskList .taskCard i:active,
+#root .completeForm .taskList .taskCard i:active {
+  scale: 0.95;
+}/*# sourceMappingURL=index.css.map */
