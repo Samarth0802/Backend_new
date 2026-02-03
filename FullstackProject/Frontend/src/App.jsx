@@ -9,10 +9,9 @@ const App = () => {
   const [description, setDescription] = useState('')
   const [tasks, setTasks] = useState([])
 
-  // ✅ GET — page load hone pe sabhi tasks fetch karte hain
   useEffect(() => {
     fetchTasks()
-  }, []) // [] matlab sirf ek baar — jab component mount ho
+  }, []) 
 
   async function fetchTasks() {
     try {
