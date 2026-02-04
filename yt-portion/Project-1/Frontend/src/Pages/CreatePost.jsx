@@ -19,7 +19,7 @@ const CreatePost = () => {
         navigate('/show-post')
     }
 
-  return (
+  return (  
     <div className='create-post'>
       <form className='post-form' onSubmit={(e)=>{
         submitForm(e)
